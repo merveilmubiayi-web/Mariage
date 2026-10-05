@@ -1,0 +1,14 @@
+.scan { max-width: 480px; min-height: 100vh; margin: 0 auto; padding: 24px 16px; display: grid; align-content: start; gap: 16px; color: var(--paper); }
+.scan h1 { margin: 0; font: italic 500 2rem/1.1 "Bodoni Moda", Georgia, serif; }
+.scan p { margin: 0; }
+.scan button { color: var(--wine); background: var(--paper); }
+.scan-error { color: #ffd7d9; }
+.reader { width: 100%; min-height: 280px; overflow: hidden; background: #000; border-radius: 6px; }
+
+.result { display: grid; gap: 8px; padding: 32px 20px; text-align: center; color: #fff; border-radius: 6px; }
+.result.ok { background: #1f6b45; }
+.result.warn { background: #8a5a00; }
+.result.bad { background: #a3262a; }
+.result .icon { font-size: 3.5rem; line-height: 1; }
+.result h2 { margin: 0; font-size: 1.7rem; }
+.result .name { font-size: 1.3rem; font-weight: 500; }

@@ -1,0 +1,41 @@
+.page { min-height: 100vh; display: grid; place-items: center; padding: 24px 16px; }
+.status { color: var(--paper); }
+
+.pass {
+  width: 100%; max-width: 420px; padding: 40px 28px 32px;
+  text-align: center; background: var(--paper); border-radius: 6px;
+}
+.invite { margin: 0 0 8px; font-style: italic; }
+h1 { margin: 0 0 16px; font: italic 500 2.5rem/1.1 "Bodoni Moda", Georgia, serif; text-wrap: balance; }
+.when, .where { margin: 0; }
+.when { font-weight: 500; }
+
+/* Ligne de déchirure : sépare l'identité de l'événement du talon à présenter à l'entrée */
+.tear { position: relative; margin: 28px -28px; border-top: 2px dashed var(--blush); }
+.tear::before, .tear::after {
+  content: ""; position: absolute; top: -13px; width: 24px; height: 24px;
+  border-radius: 50%; background: var(--wine);
+}
+.tear::before { left: -12px; }
+.tear::after { right: -12px; }
+
+form { display: grid; gap: 12px; text-align: left; }
+label { font-weight: 500; }
+input {
+  padding: 14px; font: inherit; background: #fff;
+  border: 1px solid #c9b3b9; border-radius: 4px;
+}
+button {
+  padding: 14px 24px; font: inherit; font-weight: 500; cursor: pointer;
+  color: var(--paper); background: var(--wine); border: 0; border-radius: 4px;
+}
+button:disabled { opacity: 0.6; cursor: wait; }
+
+.stub { display: grid; gap: 14px; justify-items: center; }
+.guest { margin: 0; font: italic 500 1.6rem/1.2 "Bodoni Moda", Georgia, serif; }
+.hint { margin: 0; font-size: 0.9rem; }
+.error { margin: 0; color: var(--danger); font-size: 0.9rem; }
+.link { padding: 0; font-weight: 400; color: var(--ink); background: none; text-decoration: underline; }
+
+.view { padding: 12px 12px 24px; }
+.composed { width: 100%; height: auto; border-radius: 4px; }

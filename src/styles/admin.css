@@ -1,0 +1,30 @@
+.link-light { padding: 0; color: var(--paper); background: none; text-decoration: underline; }
+
+.admin { min-height: 100vh; padding: 24px 16px 48px; background: var(--paper); }
+.admin-inner { max-width: 960px; margin: 0 auto; display: grid; gap: 28px; }
+.admin h1 { margin: 0; font: italic 500 2rem/1.1 "Bodoni Moda", Georgia, serif; text-wrap: balance; }
+.admin h2 { margin: 0 0 12px; font-size: 1.1rem; }
+.admin label { display: grid; gap: 4px; }
+.admin-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; }
+.admin-head button, .admin td button { padding: 8px 12px; }
+
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 12px; }
+.stat { padding: 16px; background: #fff; border: 1px solid #e3d5d9; border-radius: 6px; }
+.stat strong { display: block; font-size: 1.9rem; line-height: 1.1; }
+
+.fields { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+.toolbar { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.toolbar input { flex: 1 1 200px; }
+.toolbar select { padding: 12px; font: inherit; background: #fff; border: 1px solid #c9b3b9; border-radius: 4px; }
+
+.table-wrap { overflow-x: auto; background: #fff; border: 1px solid #e3d5d9; border-radius: 6px; }
+table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+th, td { padding: 10px 12px; text-align: left; white-space: nowrap; border-bottom: 1px solid #efe6e8; }
+.badge { padding: 2px 8px; font-size: 0.8rem; font-weight: 500; border-radius: 999px; }
+.badge.valid { color: #14472e; background: #d9efe2; }
+.badge.used { color: #5c3b00; background: #f3e2b5; }
+.badge.revoked { color: #7a1c1f; background: #f4d4d5; }
+
+.image-editor input[type="range"] { width: 100%; }
+.image-editor input[type="color"] { width: 64px; height: 40px; padding: 2px; }
+.preview { max-width: 320px; }
